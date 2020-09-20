@@ -10,6 +10,7 @@ from . import dtslogger
 from .config import read_shell_config
 from .exceptions import InvalidEnvironment, UserError
 
+__all__ = ['get_dockerhub_username']
 
 def running_with_sudo() -> bool:
     if "SUDO_USER" in os.environ:

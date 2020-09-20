@@ -17,6 +17,7 @@ if sys.version_info < (3, 6):
     logging.error(msg)
     sys.exit(2)
 
+from .constants import *
 from .exceptions import ConfigInvalid, ConfigNotPresent
 from .utils import format_exception
 
@@ -34,5 +35,6 @@ from .dt_command_abs import DTCommandAbs
 from .dt_command_placeholder import DTCommandPlaceholder
 from .main import cli_main
 from .exceptions import *
+from .env_checks import *
 
 from .main import OtherVersions

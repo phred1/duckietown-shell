@@ -3,6 +3,7 @@ import termcolor
 
 from . import __version__
 
+__all__ = ['DTShellConstants']
 
 class DTShellConstants:
     ROOT = "~/.dt-shell/"
